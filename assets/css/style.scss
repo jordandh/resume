@@ -13,3 +13,11 @@ body {
 section {
   padding: 1em;
 }
+
+.my-work-list {
+  @extend .flex-list;
+
+  > a {
+    padding: 1em;
+  }
+}
