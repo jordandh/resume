@@ -22,17 +22,33 @@ hr {
   border-top: solid 1px $hr-color;
 }
 
-header {
-  background-color: $header-bg-color;
-}
-
-header,
-section {
-  padding: 1em;
-}
-
 .text-muted {
   color: $text-muted-color;
+}
+
+/*
+ * header
+ */
+header {
+  padding: $content-padding;
+  background-color: $header-bg-color;
+
+  .heading {
+    max-width: $max-content-width;
+    margin: 0 auto;
+  }
+}
+
+/*
+ * main
+ */
+main {
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+section {
+  padding: $content-padding;
 }
 
 /*
