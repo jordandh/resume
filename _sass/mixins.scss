@@ -10,10 +10,10 @@
   -webkit-flex-wrap: $wrap;
   
   @if $wrap == nowrap {
-		-ms-flex-wrap: none;
-	} @else {
-		-ms-flex-wrap: $wrap;
-	}
+    -ms-flex-wrap: none;
+  } @else {
+    -ms-flex-wrap: $wrap;
+  }
   
   flex-wrap: $wrap;
 }
