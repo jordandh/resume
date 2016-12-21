@@ -72,10 +72,10 @@ section {
 
   a {
     display: inline-block;
+    border-radius: $content-padding / 2;
     padding: $content-padding;
     
     &:hover {
-      border-radius: $content-padding / 2;
       background-color: $link-hover-bg-color;
       color: $link-hover-color;
     }
