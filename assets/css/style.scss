@@ -27,6 +27,8 @@ section {
 .my-work-list {
   @extend .flex;
   @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
 
   > a {
     padding: 1em;
