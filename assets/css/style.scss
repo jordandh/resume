@@ -11,6 +11,11 @@ body {
   color: $font-color;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
 section {
   padding: 1em;
 }
