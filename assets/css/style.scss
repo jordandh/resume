@@ -20,6 +20,10 @@ section {
   padding: 1em;
 }
 
+ul {
+  list-style: none;
+}
+
 .text-muted {
   color: $text-muted-color;
 }
