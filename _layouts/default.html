@@ -15,11 +15,42 @@
 
     <main>
       <section>
-        {{ content }}
+        <h2>My Work</h2>
+        <div>
+          <a href="https://www.sigalert.com">sigalert.com</a>
+          <a href="https://fictionpad.com">fictionpad.com</a>
+          <a href="https://itunes.apple.com/us/app/sigalert.com-live-traffic/id424889327?mt=8">Sigalert iOS App</a>
+          <a href="https://itunes.apple.com/us/app/total-traffic/id878148924?mt=8">Total Traffic iOS App</a>
+        </div>
+      </section>
+      
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Web and iOS Development</li>
+          <li>Code Architecture, UI Design</li>
+          <li>Single Page Web Apps, Coding Emails, Making Tools</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Languages and Tech</h2>
+        <ul>
+          <li>
+            Javascript, Swift, Objective-C, Ruby,
+            <span class="text-muted">C++, C#, VB.net, VB, Perl, Python</span>
+          </li>
+          <li>HTML 5, CSS, LESS, ES Next</li>
+          <li>AWS, Grunt, Gulp, Git</li>
+          <li>
+            Classic ASP, Rails,
+            <span class="text-muted">ASP.NET 2.0</span>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer class="inner">
+    <footer>
       {% if site.github.is_project_page %}
       <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       {% endif %}
