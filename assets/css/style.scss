@@ -20,6 +20,10 @@ section {
   padding: 1em;
 }
 
+.text-muted {
+  color: $text-muted-color;
+}
+
 .my-work-list {
   @extend .flex;
   @include flex-wrap(wrap);
