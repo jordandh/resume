@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+hr {
+  margin: 1em;
+  border: 0;
+  border-top: solid 1px $hr-color;
+}
+
 header {
   background-color: $header-bg-color;
 }
@@ -23,12 +29,6 @@ header {
 header,
 section {
   padding: 1em;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .text-muted {
@@ -43,6 +43,9 @@ ul {
   @include flex-wrap(wrap);
   @include align-items(flex-start);
   @include justify-content(space-between);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   a {
     display: inline-block;
