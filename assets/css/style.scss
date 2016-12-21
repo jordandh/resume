@@ -20,7 +20,7 @@ body {
   color: $font-color;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin: 0.5em 0;
 }
 
@@ -30,6 +30,14 @@ h1 {
 
 h2 {
   font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
