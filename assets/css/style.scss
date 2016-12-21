@@ -36,7 +36,7 @@ hr {
  * header
  */
 header {
-  padding: $content-padding;
+  padding: $content-padding 0;
   background-color: $header-bg-color;
 
   .heading {
