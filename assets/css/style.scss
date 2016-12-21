@@ -35,6 +35,9 @@ ul {
   color: $text-muted-color;
 }
 
+/*
+ * my work
+ */
 .my-work-list {
   @extend .flex;
   @include flex-wrap(wrap);
@@ -51,4 +54,17 @@ ul {
       color: $link-hover-color;
     }
   }
+}
+
+/*
+ * skills and knowledge
+ */
+.skills-and-knowledge {
+  @extend .flex;
+}
+
+.skills-list {
+}
+
+.knowledge-list {
 }
