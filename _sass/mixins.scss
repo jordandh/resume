@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.flex-wrap ($wrap) {
+@mixin flex-wrap ($wrap) {
   -webkit-flex-wrap: $wrap;
   
   @if $wrap == nowrap {
