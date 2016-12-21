@@ -99,5 +99,7 @@ section {
  * footer
  */
 footer {
+  max-width: $max-content-width;
+  margin: 0 auto;
   padding: $content-padding;
 }
