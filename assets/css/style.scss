@@ -5,6 +5,9 @@
 @import "mixins";
 @import "normalize";
 
+/*
+ * reset
+ */
 *,
 *:before,
 *:after {
@@ -15,6 +18,17 @@ body {
   font-family: $font-stack;
   font-size: $font-size;
   color: $font-color;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
 }
 
 ul {
@@ -32,6 +46,9 @@ hr {
   border-top: solid 1px $hr-color;
 }
 
+/*
+ * helpers
+ */
 .text-muted {
   color: $text-muted-color;
 }
