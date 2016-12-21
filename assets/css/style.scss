@@ -1,8 +1,15 @@
 ---
 ---
 
+@import "variables";
 @import "normalize";
 
-h1 {
-  font-size: 50px;
+body {
+  font-family: $font-stack;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+section {
+  padding: 1em;
 }
