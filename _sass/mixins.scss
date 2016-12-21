@@ -35,26 +35,26 @@
     -ms-flex-pack: $justify;
   }
   
-  -webkit-justify-content: @justify;
-  -moz-justify-content: @justify;
-  -ms-justify-content: @justify;
-  justify-content: @justify;
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
 }
 
 @mixin align-items ($align) {
-  @if $value == flex-start {
+  @if $align == flex-start {
     -webkit-box-align: start;
     -ms-flex-align: start;
-  } @else if $value == flex-end {
+  } @else if $align == flex-end {
     -webkit-box-align: end;
     -ms-flex-align: end;
   } @else {
-    -webkit-box-align: $value;
-    -ms-flex-align: $value;
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
   }
   
-  -webkit-align-items: @align;
-  -moz-align-items: @align;
-  -ms-align-items: @align;
-  align-items: @align;
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
 }
