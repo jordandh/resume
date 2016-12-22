@@ -21,7 +21,6 @@ body {
 }
 
 h1, h2, h3 {
-  //margin: 0.5em 0;
   margin: 0 0 0.5em;
 }
 
@@ -52,7 +51,7 @@ a {
 }
 
 hr {
-  margin: ($content-padding * 2) 1em;
+  margin: ($content-padding * 2) $content-padding;
   border: 0;
   border-top: solid 1px $hr-color;
 }
@@ -76,10 +75,6 @@ header {
     margin: 0 auto;
     padding: 0 $content-padding;
   }
-  
-  h1 {
-    margin-top: 0;
-  }
 }
 
 /*
@@ -91,7 +86,6 @@ main {
 }
 
 section {
-  //padding: $content-padding;
   margin: ($content-padding * 2) $content-padding;
 }
 
@@ -106,7 +100,6 @@ section {
 }
 
 .my-work {
-  //padding: 1em 0;
   margin-left: 0;
   margin-right: 0;
   
@@ -149,7 +142,7 @@ section {
   margin: ($content-padding * 2) 0;
   
   section {
-    margin: 0 1em;
+    margin: 0 $content-padding;
   }
 }
 
@@ -177,6 +170,6 @@ section {
  */
 footer {
   max-width: $max-content-width;
-  margin: 0 auto;
-  padding: $content-padding;
+  margin: ($content-padding * 2) auto;
+  padding: 0 $content-padding;
 }
