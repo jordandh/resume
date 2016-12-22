@@ -96,6 +96,7 @@ section {
   @include flex-wrap(wrap);
   @include align-items(flex-start);
   @include justify-content(space-between);
+  @include flex-direction(column);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -109,6 +110,12 @@ section {
       background-color: $link-hover-bg-color;
       color: $link-hover-color;
     }
+  }
+}
+
+@media (min-width: 500px) {
+  .my-work-list {
+    @include flex-direction(row);
   }
 }
 
