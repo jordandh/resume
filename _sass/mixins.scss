@@ -36,9 +36,7 @@
   }
   
   -webkit-justify-content: $justify;
-  -
-  
-  -justify-content: $justify;
+  -moz-justify-content: $justify;
   -ms-justify-content: $justify;
   justify-content: $justify;
 }
