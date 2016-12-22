@@ -96,7 +96,6 @@ section {
   @include flex-wrap(wrap);
   @include align-items(flex-start);
   @include justify-content(space-between);
-  @include flex-direction(column);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -113,17 +112,18 @@ section {
   }
 }
 
-@media (min-width: 33em) {
-  .my-work-list {
-    @include flex-direction(row);
-  }
-}
-
 /*
  * skills and knowledge
  */
 .skills-and-knowledge {
   @extend .flex;
+  @include flex-direction(column);
+}
+
+@media (min-width: 33em) {
+  .skills-and-knowledge {
+    @include flex-direction(row);
+  }
 }
 
 .skills-list {
