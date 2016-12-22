@@ -36,7 +36,9 @@
   }
   
   -webkit-justify-content: $justify;
-  -moz-justify-content: $justify;
+  -
+  
+  -justify-content: $justify;
   -ms-justify-content: $justify;
   justify-content: $justify;
 }
@@ -57,4 +59,25 @@
   -moz-align-items: $align;
   -ms-align-items: $align;
   align-items: $align;
+}
+
+@mixin flex-direction ($direction) {
+  @if $direction == row-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: horizontal;
+	} @else if $direction == column {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: vertical;
+	} @else if $direction == column-reverse {
+		-webkit-box-direction: reverse;
+		-webkit-box-orient: vertical;
+	} @else {
+		-webkit-box-direction: normal;
+		-webkit-box-orient: horizontal;
+	}
+
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+	-ms-flex-direction: $direction;
+	flex-direction: $direction;
 }
