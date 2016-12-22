@@ -120,7 +120,7 @@ section {
   @include flex-direction(column);
 }
 
-@media (min-width: 33em) {
+@media (min-width: 34em) {
   .skills-and-knowledge {
     @include flex-direction(row);
   }
