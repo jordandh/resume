@@ -91,9 +91,11 @@ section {
 /*
  * my work
  */
-.my-work {
-  padding-left: 0;
-  padding-right: 0;
+.my-work-lists {
+  @extend .flex;
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  @include justify-content(space-between);
 }
 
 .my-work-list {
@@ -107,11 +109,11 @@ section {
 
   a {
     display: inline-block;
-    border-radius: $content-padding / 2;
-    padding: $content-padding;
+    //border-radius: $content-padding / 2;
+    padding: $content-padding 0;
     
     &:hover {
-      background-color: $link-hover-bg-color;
+      //background-color: $link-hover-bg-color;
       color: $link-hover-color;
     }
   }
@@ -129,12 +131,6 @@ section {
   .skills-and-knowledge {
     @include flex-direction(row);
   }
-}
-
-.skills-list {
-}
-
-.knowledge-list {
 }
 
 /*
