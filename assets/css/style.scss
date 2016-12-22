@@ -52,7 +52,7 @@ a {
 }
 
 hr {
-  margin: $content-padding;
+  margin: ($content-padding * 2) 1em;
   border: 0;
   border-top: solid 1px $hr-color;
 }
@@ -147,6 +147,10 @@ section {
   @extend .flex;
   @include flex-direction(column);
   margin: ($content-padding * 2) 0;
+  
+  section {
+    margin: 0 1em;
+  }
 }
 
 @media (min-width: 34em) {
@@ -155,10 +159,6 @@ section {
     
     hr {
       display: none;
-    }
-    
-    section {
-      margin: 0 1em;
     }
   }
 }
