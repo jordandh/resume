@@ -113,7 +113,7 @@ section {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 33em) {
   .my-work-list {
     @include flex-direction(row);
   }
