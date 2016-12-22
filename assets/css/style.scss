@@ -91,7 +91,7 @@ main {
 
 section {
   //padding: $content-padding;
-  margin: $content-padding;
+  margin: ($content-padding * 2) $content-padding;
 }
 
 /*
@@ -105,7 +105,7 @@ section {
 }
 
 .my-work {
-  padding: 1em 0;
+  //padding: 1em 0;
   
   h2 {
     padding: 0 0.666667em;
