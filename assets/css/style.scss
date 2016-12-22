@@ -42,6 +42,7 @@ p {
 }
 
 ul {
+  margin-bottom: 0;
   padding-left: $content-padding * 1.25;
 }
 
@@ -106,6 +107,8 @@ section {
 
 .my-work {
   //padding: 1em 0;
+  margin-left: 0;
+  margin-right: 0;
   
   h2 {
     padding: 0 0.666667em;
@@ -143,11 +146,20 @@ section {
 .skills-and-knowledge {
   @extend .flex;
   @include flex-direction(column);
+  margin: ($content-padding * 2) 0;
 }
 
 @media (min-width: 34em) {
   .skills-and-knowledge {
     @include flex-direction(row);
+    
+    hr {
+      display: none;
+    }
+    
+    section {
+      margin: 0 1em;
+    }
   }
 }
 
