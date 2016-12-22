@@ -22,7 +22,7 @@ body {
 
 h1, h2, h3 {
   margin: 0.5em 0;
-  margin: 0 0 0.5em;
+  //margin: 0 0 0.5em;
 }
 
 h1 {
@@ -90,7 +90,8 @@ main {
 }
 
 section {
-  padding: $content-padding;
+  //padding: $content-padding;
+  margin: $content-padding;
 }
 
 /*
