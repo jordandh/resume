@@ -76,6 +76,26 @@ header {
     margin: 0 auto;
     padding: 0 $content-padding;
   }
+  
+  a {
+    display: block;
+  }
+  
+  .hyphen {
+    display: none;
+  }
+}
+
+@media (min-width: 23em) {
+  header {
+    a {
+      display: inline;
+    }
+    
+    .hyphen {
+      display: inline;
+    }
+  }
 }
 
 /*
