@@ -157,6 +157,14 @@ section {
   }
 }
 
+@media (min-width: 40em) {
+  .my-work-list {
+    a {
+      width: auto;
+    }
+  }
+}
+
 /*
  * skills and knowledge
  */
